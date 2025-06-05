@@ -78,13 +78,13 @@ sleep(500);
  * Sometimes, you want to run a series of async tasks, but you get all you need as long as any one of these tasks is settled.
  * Promise provides a static Promise.race function for this scenario:
  */
-var task1 = new Promise((resolve, reject) => {
+const task1 = new Promise((resolve, reject) => {
     setTimeout(resolve, 2000, 'one');
 
     setTimeout(reject, 1000, 'one');
 });
 
-var task2 = new Promise(function (resolve, reject) {
+const task2 = new Promise(function (resolve, reject) {
     setTimeout(resolve, 1000, 'two');
 
     setTimeout(reject, 1000, 'two');
