@@ -1,15 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2022",
+    "target": "es2020",
     "module": "commonjs",
-
-    "strict": true,
+    "resolveJsonModule": true,
 
     "esModuleInterop": true,
-    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
+
+    "strict": true,    
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    "skipLibCheck": true,
   },
+  "types": [], // Ensures no @types/ are unintentionally included
   "exclude": [
     "**/dist/**",
     "**/gen/openapi/**",
@@ -17,7 +21,6 @@
     "**/node_modules/**"
   ]
 }
-
 /** no unused locals, no unused parameters
     "noUnusedLocals": true,
     "noUnusedParameters": true,
