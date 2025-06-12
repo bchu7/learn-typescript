@@ -1,0 +1,44 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "array-bracket-spacing": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.test.ts",
+        "src/**/*.integration-test.ts"
+      ],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    }
+  ]
+}
