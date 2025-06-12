@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2020",
     "module": "commonjs",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
 
     "esModuleInterop": true,
@@ -10,6 +11,8 @@
     "strict": true,    
     "noImplicitThis": true,
     "alwaysStrict": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
 
     "skipLibCheck": true,
   },
@@ -21,7 +24,3 @@
     "**/node_modules/**"
   ]
 }
-/** no unused locals, no unused parameters
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-*/
